@@ -1,0 +1,55 @@
+.start-container{
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 20rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+    font-family: Poetsen One;
+  
+}
+.heartright{
+    position: absolute;
+    top:10px;
+    right:20px;
+   padding: 5px;
+   background-color: #f783ac;
+    border:1px solid transparent;
+    border-radius: 50px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap:2rem;
+    padding: 8px;
+
+}
+.go-btn{
+    background-color: #62cb74;
+    width: 150px;
+    height: 30px;
+    padding: 10px;
+    font-family: Poetsen One;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+
+@media screen  and (max-width:427px) and (min-width:320px){
+    .start-container{
+        margin-top: 80px;
+        width: 15rem;
+        padding: 10px;
+        
+      
+    }
+    .heartright{
+        width: 20px;
+    }
+}

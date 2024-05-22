@@ -1,0 +1,43 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  background-color: #e9ecef;
+  font-family: Poetsen One;
+  cursor: pointer;
+}
+
+
+
+
+.light{
+  background-color: #e9ecef;
+  color: black;
+}
+
+.dark,.dark .likedPokemon{
+  background-color: black;
+  color: #8b8c8d;
+  
+}
+.dark .start-container{
+  border: 2px solid gray;
+ 
+}
+.dark .go-btn{
+  background-color: darkgreen;
+}
+.dark .pokemon-card:hover{
+    background-color: rgb(101, 91, 91);
+    transform: scale(1.2)
+ }
+.dark .card{
+  background-color: black;
+}
+
+.dark .pile-btn{
+  color:#8b8c8d
+}
+.dark #dislike,.dark #like{
+  color:#8b8c8d
+}
+

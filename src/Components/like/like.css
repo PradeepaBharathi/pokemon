@@ -1,0 +1,41 @@
+.likedPokemon {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    
+    background-color:#e9ecef;
+  }
+  
+  .pokemon-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    width: calc(25% - 30px); /* Each card takes 25% of the container width */
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 8px 10px gray;
+    transition: transform .2s
+  }
+
+ .pokemon-card:hover{
+    background-color: antiquewhite;
+    transform: scale(1.2)
+ }
+  .pokemon-card .poke-image {
+    width: 100px; 
+    height: 100px; 
+  }
+  
+  .pokemon-card h3 {
+    margin-top: 5px;
+    font-size: 16px;
+    text-align: center;
+  }
+  @media screen  and (max-width:427px) and (min-width:320px){
+    .pokemon-card  {
+      width: calc(50% - 30px)
+    }
+  }

@@ -1,0 +1,170 @@
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 40px !important;
+  }
+  
+  .card-container {
+    position: relative;
+    width: 20rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    position: absolute;
+    background-color: #e9ecef;
+    width: 90%;
+    height: 80%;
+    box-shadow: 0 8px 18px gray;
+   
+  }
+  
+  .card:not(:first-child) {
+    transform: translateY(20px);
+    opacity: 0.9;
+  }
+  
+  .heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+  }
+  
+  .pokemon-img {
+    width: 150px;
+  }
+  
+  .pokemon-name {
+    font-family: 'Poetsen One', sans-serif;
+    font-size: 24px;
+  }
+  
+  .abilities {
+    display: flex;
+    gap: 0.5rem;
+    
+  }
+  
+  .ability-btn {
+    background-color: #ffd43b;
+    padding: 5px 10px;
+    font-family: 'Poetsen One', sans-serif;
+    border-radius: 5px;
+    border: none;
+  }
+  .ability-btn:hover{
+    background-color: #977e23;
+    transform: scale(1.5);
+  }
+  .btn-list {
+    display: flex;
+    gap: 1rem;
+    margin-top: 20px;
+  }
+  
+  #dislike {
+    background-color: #ff8787;
+    width: 90px;
+    height: 40px;
+    font-family: 'Poetsen One', sans-serif;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+  }
+  #dislike:hover{
+    background-color: #a44141;
+    transform: scale(1.1);
+  }
+  #like {
+    background-color: #69db7c;
+    width: 90px;
+    height: 40px;
+    font-family: 'Poetsen One', sans-serif;
+    border-radius: 10px;
+    border: none;
+   display: flex;
+  
+   
+  }
+ .heartemoji,.word{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: 8px;
+ }
+ .dislikeemoji{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   
+ }
+
+
+ #dislike:hover .dislikeemoji {
+   
+    animation: thumb 0.8s infinite; /* Apply animation */
+  }
+  
+  @keyframes thumb {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.8); /* Increase size */
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+ .heartemoji{
+   font-size: 30px;
+ }
+ #like:hover .heartemoji {
+    
+    animation: heartbeat 0.8s infinite; /* Apply animation */
+  }
+  
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5); /* Increase size */
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  #like:hover{
+    background-color: #287034;
+    transform: scale(1.2);
+  }
+  @media screen  and (max-width:427px) and (min-width:320px){
+    .card-container {
+      width: 17rem;
+    }
+  }
+
+  @media screen  and (max-width:768px){
+    .game-container {
+     margin-top: 10px !important;
+    }
+  }
