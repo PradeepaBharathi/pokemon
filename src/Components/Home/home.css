@@ -1,10 +1,32 @@
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.pikachu {
+    margin-bottom: 20px;
+    position: absolute; 
+    bottom: 0; 
+    animation: walk 8s linear infinite; 
+  }
+  @keyframes walk {
+    0% {
+      left: -100px; /* Initial position of Pikachu */
+    }
+    100% {
+      left: calc(100% + 100px); /* Final position of Pikachu, off the screen */
+    }
+  }  
+
 .start-container{
   
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     margin-top: 40px;
     width: 20rem;
     border: 2px solid black;

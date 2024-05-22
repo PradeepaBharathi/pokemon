@@ -2,6 +2,7 @@ import React from "react";
 import "./home.css";
 import heart from "../../assests/heart.png";
 import { useNavigate } from "react-router-dom";
+import pikachu from '../../assests/pikachu.png'
 function Home() {
   const navigate = useNavigate();
   const handleGo = () => {
@@ -10,6 +11,9 @@ function Home() {
   };
   return (
    <div className="home">
+    <div className="pikachu">
+      <img src={pikachu} alt='pikachu'/>
+    </div>
      <div className='start-container'>
       <img src={heart} className="heartright" alt="heart-logo" />
 
